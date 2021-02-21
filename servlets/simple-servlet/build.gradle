@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'br.com.luizcanassa'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+}
+
+test {
+    useJUnitPlatform()
+}
