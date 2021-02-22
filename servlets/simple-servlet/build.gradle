@@ -15,6 +15,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
 
     implementation 'javax.servlet:javax.servlet-api:4.0.1'
+    implementation 'jstl:jstl:1.2'
 }
 
 test {

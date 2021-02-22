@@ -1,16 +1,23 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: luiz-canassa
-  Date: 2/21/21
-  Time: 6:36 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-    Página Inincial
-</body>
-</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<jsp:include page="_templates/header.jsp"/>
+
+
+<div class="main">
+    <div class="content">
+        <div class="option-box">
+            <div class="option">
+                <a href="${pageContext.request.contextPath}/author">
+                    <button class="btn btn-primary">Authors</button>
+                </a>
+            </div>
+            <div class="option">
+                <a href="${pageContext.request.contextPath}/book">
+                    <button class="btn btn-primary">Books</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<jsp:include page="_templates/footer.jsp"/>
